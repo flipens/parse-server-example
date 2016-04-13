@@ -11,11 +11,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  serverURL: "https://your-app-name.herokuapp.com/parse",
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  serverURL: "https://cyclothymics-v1.herokuapp.com/parse",
+  databaseURI: databaseUri || 'mongodb://heroku_9ts8kf6j:dghpbsktpg32enihthn0hdp2ft@ds013290.mlab.com:13290/heroku_9ts8kf6j',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '',
+  appId: process.env.APP_ID || 'cyclothymics63fyf789fFLngDS2kdjj20jdjddxx',
+  masterKey: process.env.MASTER_KEY || 'uehefhaknclklnFLnHRYJK%axii2',
   oauth: {
    twitter: {
      consumer_key: "u8AkZjm2n2ZvROGIjCZ9eG0Ub", // REQUIRED
