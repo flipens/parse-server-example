@@ -11,20 +11,7 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  serverURL: "https://cyclothymics-v1.herokuapp.com/parse",
-  databaseURI: databaseUri || 'mongodb://heroku_9ts8kf6j:dghpbsktpg32enihthn0hdp2ft@ds013290.mlab.com:13290/heroku_9ts8kf6j',
-  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'cyclothymics63fyf789fFLngDS2kdjj20jdjddxx',
-  masterKey: process.env.MASTER_KEY || 'uehefhaknclklnFLnHRYJK%axii2',
-  oauth: {
-   twitter: {
-     consumer_key: "u8AkZjm2n2ZvROGIjCZ9eG0Ub", // REQUIRED
-     consumer_secret: "FSVjvE8tTjkOHMUol4Lrhqt3lV64ttirpOk3GVFxYrfXzHQ5Ql" // REQUIRED
-   },
-   facebook: {
-     appIds: "118579665164608"
-   }
-  }
+  
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
